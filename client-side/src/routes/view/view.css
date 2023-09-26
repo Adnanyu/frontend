@@ -116,7 +116,10 @@ post-author{
 .checked{
     fill: orange;
 }
-
+.author{
+    cursor: pointer;
+    color: #E60023;
+}
 
 @media (max-width: 950px) {
     .section-container{

@@ -13,6 +13,9 @@
     /* margin: 1px 10px; */
     padding: 12px 18px;
 }
+nav{
+    background-color: #fafafa;
+}
 
 .nav-links:hover{
     background-color: #f1f1f1;

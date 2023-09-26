@@ -14,7 +14,8 @@ const ViewPost = () => {
     deleteHandler,
     post,
     isLoading,
-    isDeleting
+    isDeleting,
+    navigate
 } = useView()
 
   dayjs.extend(relativeTime);
@@ -24,7 +25,7 @@ const ViewPost = () => {
       <section className='section-container'>
         <div className='header-container'>
           <h4 className='post-author'>
-            Posted By: <span>{post.author.username}</span>{' '}
+            Posted By: <span className='author' onClick={()=> navigate(`/users/${post.author._id}`)}>{post.author.username}</span>{' '}
           </h4>
           <span className='posted-date'>{dayjs(post.createdAt).fromNow()}</span>
         </div>

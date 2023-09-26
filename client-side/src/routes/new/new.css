@@ -9,8 +9,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    background-color: #f1f1f1;
+    height: 90vh;
+    background-color: #fafafa;
     text-transform: capitalize;
 }
 
@@ -167,4 +167,10 @@ p{
     font-weight: 600;
     cursor: pointer;
     color: #E60023
+}
+
+@media (max-width:950px) {
+    .auth{
+        height: auto;
+    }
 }

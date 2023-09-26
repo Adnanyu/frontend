@@ -1,0 +1,40 @@
+/* src/App.css */
+
+.homepage {
+  margin: 100px auto;
+  padding: 20px;
+  background-color: #fafafa;
+  height: 65vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.home-buttons {
+  padding: 10px 20px;
+  background-color: #e60023;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 25px;
+}
+.homepage-container{
+  display: f
+}

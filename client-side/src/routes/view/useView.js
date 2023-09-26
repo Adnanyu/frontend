@@ -40,6 +40,7 @@ export const useView = () => {
         id,
         post,
       isLoading,
-        isDeleting
+      isDeleting,
+        navigate
     }
 };

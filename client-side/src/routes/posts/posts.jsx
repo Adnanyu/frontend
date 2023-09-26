@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Card from '../../components/card.component/card';
 import Spinner from '../../components/spinner/spinner';
+import PostContainer from '../../components/postContainer';
 import { getAllPosts } from '../../store/postsSlice';
 
 import './posts.css'
@@ -14,12 +15,7 @@ const Posts = () => {
   
   
   return (
-    isLoading ? <Spinner /> :
-    <main className='post-container'>
-      {posts && posts.map((post) => {
-        return <Card key={post._id} post={post} />;
-      })}
-    </main>
+    <PostContainer posts={ posts } isLoading={ isLoading} />
   );
 };
 
